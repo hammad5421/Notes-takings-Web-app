@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+      
+      
+        <title>iNotes - Notes taking made easy</title>
+      
+    
+
+    
+    <style>
+        body {
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 476px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 0.5px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #4f005f4c;
+}
+
+.error-message {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.heading {
+    text-align: center;
+    margin: 20px auto;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="logo.png" height="48px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/crud/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/crud/contact.php">Contact Us</a>
+            </li>
+    
+          </ul>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="navigateToAnotherPage()">Login as Admin</button>
+          </form>
+        </div>
+      </nav>
+    <h2 class="heading">iNotes - The best notes taking platform.</h2>
+    <div class="container">
+        <h4>Login to User </h4>
+        <form onsubmit="return validateForm()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <input type="submit"  class="btn btn-primary" value="Login">
+        </form>
+    </div>
+
+</body>
+<script>
+     function navigateToAnotherPage() {
+      window.location.href = "adminlogin.html";
+    }
+    function validateForm() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var errorMessage = document.getElementById("error-message");
+
+    // Perform client-side validation
+    if (username === "" || password === "") {
+        errorMessage.textContent = "Please fill in all fields";
+        return false;
+    }
+
+    // Perform validation for specific users (replace with your own logic)
+    if (username !== "user" || password !== "pass") {
+        alert.textContent = "Invalid username or password";
+        return false;
+    }
+
+
+    // Navigate to the index.php page
+    window.location.replace("index.php");
+    // Prevent form submission
+    return false;
+}
+
+</script>
+</html>

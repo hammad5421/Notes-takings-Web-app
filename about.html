@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>About Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+  
+  
+    <title>iNotes - Notes taking made easy</title>
+  
+
+  <style>
+    /* CSS styles for the about page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+ 
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    p, ul, ol {
+      margin-bottom: 20px;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    .heading {
+    text-align: center;
+    margin: 20px auto;
+}
+.notes{
+    display: flex;
+}
+.notes img{
+    height: 10rem;
+}
+
+
+
+.video-section {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .video-section video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 75%;
+      object-fit: cover;
+      opacity: 0.5;
+    }
+    .video-content {
+      position: relative;
+      z-index: 1;
+      color: #000000;
+      text-align: center;
+      padding: 50px;
+    }
+    .section{
+        margin-left: 20px;
+    }
+    .section1{
+        margin-top: -12%;
+    }
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="logo.png" height="48px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/crud/index.php">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/crud/contact.php">Contact Us</a>
+            </li>
+    
+          </ul>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="navigateToAnotherPage()">Login as User</button>
+          </form>
+        </div>
+      </nav>
+      <script>
+        function navigateToAnotherPage() {
+        window.location.href = "login.html";
+      }
+   </script>
+
+      <h2 class="heading">iNotes - The best notes taking platform.</h2>
+      <section class="video-section">
+        <video src="/Understanding Note Taking- An Animated Guide to Taking Effective Notes.mp4" type="video/mp4" autoplay muted loop></video>
+<div class="video-content">
+      <h2>What is Our Notes Taking Site?</h2>
+    
+      <p>
+        Our Notes Taking Site is an online platform designed to help you keep track of your notes effectively. Whether you're a student, professional, or simply someone who likes to organize their thoughts, our site provides a convenient way to create, store, and manage your notes.
+      </p>
+</div>
+    
+
+    </section>
+
+    <section class="section section1">
+      <h2>Features</h2>
+      <ul>
+        <li>Create and Edit Notes: Easily create new notes and edit existing ones.</li>
+        <li>Organize Notes: Categorize your notes using tags or folders to keep them organized.</li>
+        <li>Search Functionality: Quickly find specific notes using our powerful search feature.</li>
+        <li>Collaboration: Share notes with others and collaborate on projects or study materials.</li>
+        <li>Real-time Updates: Changes to your notes are saved instantly and synchronized across devices.</li>
+        <li>Responsive Design: Our site is designed to work seamlessly on desktop, tablet, and mobile devices.</li>
+      </ul>
+    </section>
+
+    <section class="section ">
+      <h2>How to Get Started</h2>
+      <ol>
+        <li>Sign in: Login to your account on our site to access all the note-taking features.</li>
+        <li>Create Notes: Start creating your notes by clicking on the "New Note" button.</li>
+        <li>Organize Your Notes: Add tags or create folders to keep your notes organized.</li>
+        <li>Search and Filter: Utilize the search functionality to find specific notes or filter them by tags or folders.</li>
+        <li>Collaborate (Optional): Share your notes with others by inviting them to collaborate on a specific note or folder.</li>
+        <li>Enjoy Note-taking: Take advantage of our user-friendly interface and enjoy the process of organizing your thoughts and information.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 iNotes. All rights reserved.</p>
+  </footer>
+
+
+</body>
+</html>
